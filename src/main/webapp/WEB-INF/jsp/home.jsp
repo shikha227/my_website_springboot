@@ -1,5 +1,6 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <html>
 
 <head>
@@ -17,9 +18,11 @@ Welcome to the luv2code company home page!
 <!-- display user name and role -->
 
 <p>
+    <sec:authorize access="isAuthenticated()">
     User: <security:authentication property="principal.username" />
     <br><br>
     Role(s): <security:authentication property="principal.authorities" />
+    </sec:authorize>
 </p>
 <hr>
 <p>
