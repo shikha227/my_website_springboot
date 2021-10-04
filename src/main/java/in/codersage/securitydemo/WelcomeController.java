@@ -1,14 +1,25 @@
 package in.codersage.securitydemo;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.bind.BindResult;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Map;
 
 @Controller
 public class WelcomeController {
+    @Autowired
+    UserValidator userValidator;
+    UserService userService;
+    SecurityService securityService;
+
     // inject via application.properties
     @Value("${welcome.message}")
     private String message;
@@ -34,5 +45,24 @@ public class WelcomeController {
     @RequestMapping("/admin")
     public String admin(Map<String, Object> model) {
         return "admin";
+    }
+
+    @GetMapping("/registration")
+    public String showRegistration(Model model){
+        model.addAttribute("userForm", new User());
+        return "registration";
+    }
+
+    @PostMapping("/registration")
+    public String doRegistration(@ModelAttribute("userForm") User userForm, BindingResult bindingResult){
+        userValidator.validate(userForm, bindingResult);
+
+        if(bindingResult.hasErrors()){
+            return "registration";
+        }
+        userService.save(userForm);
+
+        securityService.autoLogin(userForm.getUsername(),userForm.getPassword());
+        return "redirect:/";
     }
 }
