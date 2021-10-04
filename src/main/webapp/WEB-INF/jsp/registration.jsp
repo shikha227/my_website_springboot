@@ -1,9 +1,12 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!doctype html>
 <html lang="en">
 
 <head>
 
-    <title>Registration</title>
+    <title>Registration Page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -13,7 +16,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
-    <script    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -33,48 +36,53 @@
             <div style="padding-top: 30px" class="panel-body">
 
                 <!-- Login Form -->
-                <form:form method="POST"  modelAttribute="userForm"  class="form-horizontal">
+                <form:form action="${pageContext.request.contextPath}/registration"
+                           method="POST" modelAttribute="userForm" class="form-horizontal">
 
+                    <!-- Place for messages: error, alert etc ... -->
+                    <div class="form-group">
+                        <div class="col-xs-15">
+                            <div>
 
+                                <!-- Check for login error -->
+
+                                <c:if test="${param.error != null}">
+
+                                    <div class="alert alert-danger col-xs-offset-1 col-xs-10">
+                                        Invalid username and password.
+                                    </div>
+
+                                </c:if>
+
+                                <c:if test="${param.logout != null}">
+
+                                    <div class="alert alert-success col-xs-offset-1 col-xs-10">
+                                        You have been logged out.
+                                    </div>
+
+                                </c:if>
+
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- User name -->
                     <div style="margin-bottom: 25px" class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
 
-                        <spring:bind path="username">
-                            <div class="form-group ${status.error ? 'has-error' : ''}">
-                                <form:input type="text" path="username" class="form-control" placeholder="Username"
-                                            autofocus="true"></form:input>
-                                <form:errors path="username"></form:errors>
-                            </div>
-                        </spring:bind>
-
+                        <input type="email" name="username" placeholder="username" class="form-control" autofocus="true">
                     </div>
 
                     <!-- Password -->
                     <div style="margin-bottom: 25px" class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
 
-                        <spring:bind path="password">
-                            <div class="form-group ${status.error ? 'has-error' : ''}">
-                                <form:input type="password" path="password" class="form-control" placeholder="Password"></form:input>
-                                <form:errors path="password"></form:errors>
-                            </div>
-                        </spring:bind>
-
+                        <input type="password" name="password" placeholder="password" class="form-control" >
                     </div>
                     <div style="margin-bottom: 25px" class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
 
-                        <spring:bind path="passwordConfirm">
-                            <div class="form-group ${status.error ? 'has-error' : ''}">
-                                <form:input type="password" path="passwordConfirm" class="form-control"
-                                            placeholder="Confirm your password"></form:input>
-                                <form:errors path="passwordConfirm"></form:errors>
-                            </div>
-                        </spring:bind>
-
-
+                        <input type="password" name="cnfpassword" placeholder="confirm password" class="form-control" >
                     </div>
 
                     <!-- Login/Submit Button -->

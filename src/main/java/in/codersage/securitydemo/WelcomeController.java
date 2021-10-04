@@ -17,7 +17,9 @@ import java.util.Map;
 public class WelcomeController {
     @Autowired
     UserValidator userValidator;
+    @Autowired
     UserService userService;
+    @Autowired
     SecurityService securityService;
 
     // inject via application.properties
@@ -63,6 +65,8 @@ public class WelcomeController {
         userService.save(userForm);
 
         securityService.autoLogin(userForm.getUsername(),userForm.getPassword());
-        return "redirect:/";
+        return "redirect:/registration";
     }
+
+
 }

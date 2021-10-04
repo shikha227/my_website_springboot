@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 
-
+@Service
 public class UserServiceImpl implements UserService{
     @Autowired
     BCryptPasswordEncoder bCrypt;
