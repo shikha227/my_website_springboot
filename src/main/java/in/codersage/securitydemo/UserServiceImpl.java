@@ -29,4 +29,20 @@ public class UserServiceImpl implements UserService{
     public User findUserByName(String username) {
         return userRepository.findUserByUsername(username);
     }
+
+    public void processOAuthPostLogin(String username) {
+        User existUser = userRepository.findUserByUsername(username);
+
+        if (existUser == null) {
+            User newUser = new User();
+            newUser.setUsername(username);
+            newUser.setProvider(Provider.GOOGLE);
+            //newUser.setEnabled(true);
+
+            userRepository.save(newUser);
+        }
+
+    }
+
+
 }

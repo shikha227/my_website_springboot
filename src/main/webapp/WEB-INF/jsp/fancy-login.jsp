@@ -35,6 +35,10 @@
 
 				<div style="padding-top: 30px" class="panel-body">
 
+					<div>
+						<h4><a href="/oauth2/authorization/google">Login with Google</a></h4>
+					</div>
+
 					<!-- Login Form -->
 					<form:form action="${pageContext.request.contextPath}/authenticateTheUser" 
 							   method="POST" class="form-horizontal">

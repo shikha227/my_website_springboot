@@ -12,7 +12,16 @@ public class User {
 
     private String username;
     private String password;
+    @Enumerated(EnumType.STRING)
+    private Provider provider;
 
+    public Provider getProvider() {
+        return provider;
+    }
+
+    public void setProvider(Provider provider) {
+        this.provider = provider;
+    }
     @ManyToMany
     private Set<Role> roles;
 
