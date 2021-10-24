@@ -1,72 +1,72 @@
 package in.codersage.securitydemo;
 
+import in.codersage.securitydemo.model.Mail;
+import in.codersage.securitydemo.service.MailService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.context.properties.bind.BindResult;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
+
+import org.springframework.util.FileCopyUtils;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
+
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.*;
+
+import java.net.URLConnection;
 
 import java.util.Map;
 
 @Controller
 public class WelcomeController {
-    @Autowired
-    UserValidator userValidator;
-    @Autowired
-    UserService userService;
-    @Autowired
-    SecurityService securityService;
 
-    // inject via application.properties
-    @Value("${welcome.message}")
-    private String message;
+    @Autowired
+    MailService mailService;
 
     @RequestMapping(value ={"/", "/home"})
     public String welcome(Map<String, Object> model) {
-        model.put("message", this.message);
-        return "home";
+        return "index";
     }
 
-    @GetMapping("/showMyLoginPage")
-    public String showMyLoginPage(){
-        return "fancy-login";
-    }
-    @RequestMapping("/guest")
-    public String guest(Map<String, Object> model) {
-        return "guest";
-    }
-    @RequestMapping("/access-denied")
-    public String accessdenied(Map<String, Object> model) {
-        return "access-denied";
-    }
-    @RequestMapping("/admin")
-    public String admin(Map<String, Object> model) {
-        return "admin";
+    @RequestMapping("/blog")
+    public String showBlog() {
+        return "blog";
     }
 
-    @GetMapping("/registration")
-    public String showRegistration(Model model){
-        model.addAttribute("userForm", new User());
-        return "registration";
+    @RequestMapping("/dummy")
+    public String showdummy() {
+        return "dummy";
     }
 
-    @PostMapping("/registration")
-    public String doRegistration(@ModelAttribute("userForm") User userForm, BindingResult bindingResult){
-        userValidator.validate(userForm, bindingResult);
+    @PostMapping("/sendMail")
+    public String sendMail(@ModelAttribute("userForm") Mail userForm, BindingResult bindingResult){
+        System.out.println("Called send mail!!!");
+        mailService.sendMail(userForm);
+        System.out.println("Mail sent successfully!!!");
+        return "index";
+    }
 
-        if(bindingResult.hasErrors()){
-            return "registration";
+    private static final String EXTERNAL_FILE_PATH = "31E82EEB99EE37E1795108F08E13106D.txt";
+
+    @GetMapping("/.well-known/pki-validation/{fileName:.+}")
+    public void downloadPDFResource(HttpServletRequest request, HttpServletResponse response,
+                                    @PathVariable("fileName") String fileName) throws IOException {
+
+        File file = new File(EXTERNAL_FILE_PATH);
+        if (file.exists()) {
+            //get the mimetype
+            String mimeType = URLConnection.guessContentTypeFromName(file.getName());
+            if (mimeType == null) {
+                //unknown mimetype so set the mimetype to application/octet-stream
+                mimeType = "application/octet-stream";
+            }
+            response.setContentType(mimeType);
+            response.setHeader("Content-Disposition", String.format("inline; filename=\"" + file.getName() + "\""));
+            response.setContentLength((int) file.length());
+            InputStream inputStream = new BufferedInputStream(new FileInputStream(file));
+            FileCopyUtils.copy(inputStream, response.getOutputStream());
         }
-        userService.save(userForm);
-
-        securityService.autoLogin(userForm.getUsername(),userForm.getPassword());
-        return "redirect:/registration";
     }
-
 
 }
