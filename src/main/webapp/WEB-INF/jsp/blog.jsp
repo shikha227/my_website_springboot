@@ -58,7 +58,7 @@
             <div class="blog-top">
                 <div class="blog-title">
                     <h2>Blog</h2>
-                    <div class="breadcrumbs"><a href="/index">Home</a>&nbsp;&nbsp;/&nbsp;&nbsp;Blog</div>
+                    <div class="breadcrumbs"><a href="/">Home</a>&nbsp;&nbsp;/&nbsp;&nbsp;Blog</div>
                 </div>
             </div>
             <div class="row" >
