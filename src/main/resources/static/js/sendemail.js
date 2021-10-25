@@ -29,7 +29,7 @@
                     // { myData: 'This is my data.' }
                     // console.log($("#form1").serialize());
                   $.ajax({type: "POST",
-                          url: "http://localhost/sendMail",
+                          url: "/sendMail",
                           data:$("#form1").serialize(),
                           success:function(result){
                       console.log(result)

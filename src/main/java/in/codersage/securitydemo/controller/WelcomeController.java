@@ -38,26 +38,8 @@ public class WelcomeController {
         return "dummy";
     }
 
-    private static final String EXTERNAL_FILE_PATH = "31E82EEB99EE37E1795108F08E13106D.txt";
 
-    @GetMapping("/.well-known/pki-validation/{fileName:.+}")
-    public void downloadPDFResource(HttpServletRequest request, HttpServletResponse response,
-                                    @PathVariable("fileName") String fileName) throws IOException {
 
-        File file = new File(EXTERNAL_FILE_PATH);
-        if (file.exists()) {
-            //get the mimetype
-            String mimeType = URLConnection.guessContentTypeFromName(file.getName());
-            if (mimeType == null) {
-                //unknown mimetype so set the mimetype to application/octet-stream
-                mimeType = "application/octet-stream";
-            }
-            response.setContentType(mimeType);
-            response.setHeader("Content-Disposition", String.format("inline; filename=\"" + file.getName() + "\""));
-            response.setContentLength((int) file.length());
-            InputStream inputStream = new BufferedInputStream(new FileInputStream(file));
-            FileCopyUtils.copy(inputStream, response.getOutputStream());
-        }
-    }
+
 
 }

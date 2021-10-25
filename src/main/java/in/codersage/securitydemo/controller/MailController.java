@@ -13,9 +13,7 @@ public class MailController {
 
     @PostMapping("/sendMail")
     public String sendMail(@RequestParam("name") String name, @RequestParam("email") String email, @RequestParam("message") String message){
-        System.out.println("Sending an email!!!");
         mailService.sendMail(name, email, message);
-        System.out.println("Sending an email!!!");
         return "The message has been sent!";
     }
 }

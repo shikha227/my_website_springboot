@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1"/>
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
     <title>Learn Computing...</title>
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico">
 
     <!-- Google Font-->
     <link
