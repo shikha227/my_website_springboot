@@ -24,12 +24,15 @@
             $(document).ready(function(){
 				"use strict"; 
               $("#button").click(function(e){
+                  e.preventDefault();
                 if(validateForm()){
-                 e.preventDefault();
+                    // { myData: 'This is my data.' }
+                    // console.log($("#form1").serialize());
                   $.ajax({type: "POST",
-                          url: "http://www.yourdomain.com/send-email.php",
+                          url: "http://localhost/sendMail",
                           data:$("#form1").serialize(),
                           success:function(result){
+                      console.log(result)
                           $("#successmsg").html(result);
                           
                         }}); 

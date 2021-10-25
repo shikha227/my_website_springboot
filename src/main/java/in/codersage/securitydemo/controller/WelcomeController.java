@@ -1,4 +1,4 @@
-package in.codersage.securitydemo;
+package in.codersage.securitydemo.controller;
 
 import in.codersage.securitydemo.model.Mail;
 import in.codersage.securitydemo.service.MailService;
@@ -21,8 +21,7 @@ import java.util.Map;
 @Controller
 public class WelcomeController {
 
-    @Autowired
-    MailService mailService;
+
 
     @RequestMapping(value ={"/", "/home"})
     public String welcome(Map<String, Object> model) {
@@ -37,14 +36,6 @@ public class WelcomeController {
     @RequestMapping("/dummy")
     public String showdummy() {
         return "dummy";
-    }
-
-    @PostMapping("/sendMail")
-    public String sendMail(@ModelAttribute("userForm") Mail userForm, BindingResult bindingResult){
-        System.out.println("Called send mail!!!");
-        mailService.sendMail(userForm);
-        System.out.println("Mail sent successfully!!!");
-        return "index";
     }
 
     private static final String EXTERNAL_FILE_PATH = "31E82EEB99EE37E1795108F08E13106D.txt";

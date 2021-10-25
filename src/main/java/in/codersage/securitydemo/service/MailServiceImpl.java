@@ -16,15 +16,16 @@ public class MailServiceImpl implements MailService{
     JavaMailSender mailSender;
 
     @Override
-    public boolean sendMail(Mail mail) {
+    public boolean sendMail(String name, String email, String messageFromUser) {
         MimeMessage message = mailSender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(message);
+        String userMessage = "Dear CodersAge, Mr./Ms " + name + " has contacted you. Following is the message from him:  " + messageFromUser;
 
         try {
-            helper.setFrom(mail.getEmail(), mail.getName());
+            helper.setFrom(email, name);
             helper.setTo("codersage.in@gmail.com");
-            helper.setSubject("[URGENT] --> Some one is trying to contatct you through your website");
-            helper.setText(mail.getMessage(), true);
+            helper.setSubject("[URGENT] --> Some one is trying to contact you through your website");
+            helper.setText(userMessage, true);
         } catch (MessagingException e) {
             e.printStackTrace();
         } catch (UnsupportedEncodingException e) {
@@ -33,4 +34,5 @@ public class MailServiceImpl implements MailService{
         mailSender.send(message);
         return false;
     }
-}
+    }
+
