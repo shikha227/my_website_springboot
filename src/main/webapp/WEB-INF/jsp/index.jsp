@@ -14,7 +14,7 @@
 
   <!-- Google Font-->
   <link
-    href='http://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700,900,900italic,700italic%7COswald:400,300,700'
+    href='https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700,900,900italic,700italic%7COswald:400,300,700'
     rel='stylesheet' type='text/css'>
   <!-- Design Style -->
   <link rel="stylesheet" type="text/css" href="css/scroll.css" />
@@ -24,6 +24,9 @@
   <!-- Portfolio Thumbnail / Slider -->
   <link rel="stylesheet" type="text/css" href="css/portfolio.css" />
   <link rel="stylesheet" type="text/css" href="css/carousel.css">
+
+
+
   <!-- Responsive -->
   <link rel="stylesheet" type="text/css" href="css/responsive.css" />
   <!-- Pie Chart / Skills -->
@@ -34,6 +37,9 @@
   <script type="text/javascript" src="js/progressbar.js"></script>
   <!-- Portfolio-->
   <script src="js/modernizr.custom.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+
+
 </head>
 
 <body>
@@ -44,7 +50,7 @@
         <!-- Logo image-->
         <img src="images/logo.png" width="140" height="140" alt="" />
         <!-- Logo name-->
-        <span>Andrew Smith</span>
+        <span>Parth Shah</span>
       </div>
       <!-- Mobile Navigation-->
       <a href="#menu1" class="menu-link"></a>
@@ -427,85 +433,85 @@
                     </section>
 
                     <!-- Lightbox Popup -->
-                    <section class="slideshow">
-                      <ul>
-                        <li>
-                          <figure>
-                            <figcaption>
-                              <h3>The Flavour Restaurant</h3>
-                              <span>Website Design & Development</span>
-                              <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute
-                                slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over
-                                skateboard anim quis, ullamco craft beer.</p>
-                            </figcaption>
-                            <div id="owl-demo1" class="owl-carousel">
-                              <div class="item"><img src="http://placehold.it/700x475" alt="" /></div>
-                              <div class="item"><img src="http://placehold.it/700x475" alt="" /></div>
-                              <div class="item"><img src="http://placehold.it/700x475" alt="" /></div>
-                              <div class="item"><img src="http://placehold.it/700x475" alt="" /></div>
-                              <div class="item"><img src="http://placehold.it/700x475" alt="" /></div>
-                            </div>
-                          </figure>
-                        </li>
-                        <li>
-                          <figure>
-                            <figcaption>
-                              <h3>Herbal Beauty Salon</h3>
-                              <span>Photography</span>
-                              <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute
-                                slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over
-                                skateboard anim quis, ullamco craft beer.</p>
-                            </figcaption>
-                            <img src="http://placehold.it/700x475" alt="" />
-                          </figure>
-                        </li>
-                        <li>
-                          <figure>
-                            <figcaption>
-                              <h3>Kayra Modelleri</h3>
-                              <span>Branding and Identity</span>
-                              <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute
-                                slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over
-                                skateboard anim quis, ullamco craft beer.</p>
-                            </figcaption>
-                            <div id="owl-demo2" class="owl-carousel">
-                              <div class="item"><img src="http://placehold.it/700x475" alt="" /></div>
-                              <div class="item"><img src="http://placehold.it/700x475" alt="" /></div>
-                              <div class="item"><img src="http://placehold.it/700x475" alt="" /></div>
-                              <div class="item"><img src="http://placehold.it/700x475" alt="" /></div>
-                              <div class="item"><img src="http://placehold.it/700x475" alt="" /></div>
-                            </div>
-                          </figure>
-                        </li>
-                        <li>
-                          <figure>
-                            <figcaption>
-                              <h3>Fashion and You</h3>
-                              <span>APPS and Web Design</span>
-                              <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute
-                                slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over
-                                skateboard anim quis, ullamco craft beer.</p>
-                            </figcaption>
-                            <iframe width="854" height="480" src="//www.youtube.com/embed/ZwzY1o_hB5Y" frameborder="0"
-                              allowfullscreen></iframe>
-                          </figure>
-                        </li>
-                        <li>
-                          <figure>
-                            <figcaption>
-                              <h3>Whole Food Flour</h3>
-                              <span>Branding and Identity</span>
-                              <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute
-                                slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over
-                                skateboard anim quis, ullamco craft beer.</p>
-                            </figcaption>
-                            <img src="http://placehold.it/700x475" alt="" />
-                          </figure>
-                        </li>
-                      </ul>
-                      <nav> <span class="fa nav-prev"></span> <span class="fa nav-next"></span> <span
-                          class="fa nav-close"></span> </nav>
-                    </section>
+<%--                    <section class="slideshow">--%>
+<%--                      <ul>--%>
+<%--                        <li>--%>
+<%--                          <figure>--%>
+<%--                            <figcaption>--%>
+<%--                              <h3>The Flavour Restaurant</h3>--%>
+<%--                              <span>Website Design & Development</span>--%>
+<%--                              <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute--%>
+<%--                                slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over--%>
+<%--                                skateboard anim quis, ullamco craft beer.</p>--%>
+<%--                            </figcaption>--%>
+<%--                            <div id="owl-demo1" class="owl-carousel">--%>
+<%--                              <div class="item"><img src="http://placehold.it/700x475" alt="" /></div>--%>
+<%--                              <div class="item"><img src="http://placehold.it/700x475" alt="" /></div>--%>
+<%--                              <div class="item"><img src="http://placehold.it/700x475" alt="" /></div>--%>
+<%--                              <div class="item"><img src="http://placehold.it/700x475" alt="" /></div>--%>
+<%--                              <div class="item"><img src="http://placehold.it/700x475" alt="" /></div>--%>
+<%--                            </div>--%>
+<%--                          </figure>--%>
+<%--                        </li>--%>
+<%--                        <li>--%>
+<%--                          <figure>--%>
+<%--                            <figcaption>--%>
+<%--                              <h3>Herbal Beauty Salon</h3>--%>
+<%--                              <span>Photography</span>--%>
+<%--                              <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute--%>
+<%--                                slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over--%>
+<%--                                skateboard anim quis, ullamco craft beer.</p>--%>
+<%--                            </figcaption>--%>
+<%--                            <img src="http://placehold.it/700x475" alt="" />--%>
+<%--                          </figure>--%>
+<%--                        </li>--%>
+<%--                        <li>--%>
+<%--                          <figure>--%>
+<%--                            <figcaption>--%>
+<%--                              <h3>Kayra Modelleri</h3>--%>
+<%--                              <span>Branding and Identity</span>--%>
+<%--                              <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute--%>
+<%--                                slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over--%>
+<%--                                skateboard anim quis, ullamco craft beer.</p>--%>
+<%--                            </figcaption>--%>
+<%--                            <div id="owl-demo2" class="owl-carousel">--%>
+<%--                              <div class="item"><img src="http://placehold.it/700x475" alt="" /></div>--%>
+<%--                              <div class="item"><img src="http://placehold.it/700x475" alt="" /></div>--%>
+<%--                              <div class="item"><img src="http://placehold.it/700x475" alt="" /></div>--%>
+<%--                              <div class="item"><img src="http://placehold.it/700x475" alt="" /></div>--%>
+<%--                              <div class="item"><img src="http://placehold.it/700x475" alt="" /></div>--%>
+<%--                            </div>--%>
+<%--                          </figure>--%>
+<%--                        </li>--%>
+<%--                        <li>--%>
+<%--                          <figure>--%>
+<%--                            <figcaption>--%>
+<%--                              <h3>Fashion and You</h3>--%>
+<%--                              <span>APPS and Web Design</span>--%>
+<%--                              <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute--%>
+<%--                                slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over--%>
+<%--                                skateboard anim quis, ullamco craft beer.</p>--%>
+<%--                            </figcaption>--%>
+<%--                            <iframe width="854" height="480" src="//www.youtube.com/embed/ZwzY1o_hB5Y" frameborder="0"--%>
+<%--                              allowfullscreen></iframe>--%>
+<%--                          </figure>--%>
+<%--                        </li>--%>
+<%--                        <li>--%>
+<%--                          <figure>--%>
+<%--                            <figcaption>--%>
+<%--                              <h3>Whole Food Flour</h3>--%>
+<%--                              <span>Branding and Identity</span>--%>
+<%--                              <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute--%>
+<%--                                slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over--%>
+<%--                                skateboard anim quis, ullamco craft beer.</p>--%>
+<%--                            </figcaption>--%>
+<%--                            <img src="http://placehold.it/700x475" alt="" />--%>
+<%--                          </figure>--%>
+<%--                        </li>--%>
+<%--                      </ul>--%>
+<%--                      <nav> <span class="fa nav-prev"></span> <span class="fa nav-next"></span> <span--%>
+<%--                          class="fa nav-close"></span> </nav>--%>
+<%--                    </section>--%>
                   </div>
                 </div>
               </div>
@@ -565,6 +571,7 @@
                       <input name="name" type="text" id="name" placeholder="Your Name..." />
                       <input name="email" type="text" id="email" placeholder="Your Email..." />
                       <textarea name="message" id="message" cols="45" rows="5" placeholder="Your Message..." ></textarea>
+                      <div class="g-recaptcha" data-sitekey="6LeSU_QcAAAAAH3SFnL3OC51HyfE4BDQWgwx4_Hn"></div>
                       <input type="submit" name="button" id="button" value="say hello!">
                       <div id="successmsg"></div>
                     </form>

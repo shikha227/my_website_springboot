@@ -21,8 +21,6 @@ import java.util.Map;
 @Controller
 public class WelcomeController {
 
-
-
     @RequestMapping(value ={"/", "/home"})
     public String welcome(Map<String, Object> model) {
         return "index";
@@ -32,14 +30,5 @@ public class WelcomeController {
     public String showBlog() {
         return "blog";
     }
-
-    @RequestMapping("/dummy")
-    public String showdummy() {
-        return "dummy";
-    }
-
-
-
-
 
 }

@@ -19,12 +19,12 @@ public class MailServiceImpl implements MailService{
     public boolean sendMail(String name, String email, String messageFromUser) {
         MimeMessage message = mailSender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(message);
-        String userMessage = "Dear CodersAge, Mr./Ms " + name + " has contacted you. Following is the message from him:  " + messageFromUser;
+        String userMessage = "Dear CodersAge, Mr./Ms " + name + " is trying to connect. Following is the message from him/her:  " + messageFromUser;
 
         try {
             helper.setFrom(email, name);
             helper.setTo("codersage.in@gmail.com");
-            helper.setSubject("[URGENT] --> Some one is trying to contact you through your website");
+            helper.setSubject("[URGENT] --> " + name + " is trying to contact you through your website");
             helper.setText(userMessage, true);
         } catch (MessagingException e) {
             e.printStackTrace();
