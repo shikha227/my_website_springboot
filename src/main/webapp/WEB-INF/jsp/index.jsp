@@ -48,7 +48,7 @@
     <aside class="menu" id="menu">
       <div class="logo">
         <!-- Logo image-->
-        <img src="images/logo.png" width="140" height="140" alt="" />
+        <img src="images/logo.png" width="140" height="140" alt=""/>
         <!-- Logo name-->
         <span>Parth Shah</span>
       </div>
@@ -117,11 +117,11 @@
                 <li>Nationality: Indian</li>
               </ul>
               <h3>Professional Profile</h3>
-              <p>Hello, I&lsquo;m Parth Shah, A dedicated teacher with a strong work ethic and a commitment to excellence in
+              <p align="justify"> <i>Hello, I&lsquo;m Parth Shah, A dedicated teacher with a strong work ethic and a commitment to excellence in
                 teaching. I Skillfully manage academic responsibilities and promotes open classroom discussions. I am
                 Programming, Computer Architecture and Security Professor with over 16 years of research and teaching
-                experiance. I thoroughly understands the learning process and works hard to adapt new methods and use
-                various teaching styles.<br>
+                experience. I thoroughly understands the learning process and works hard to adapt new methods and use
+                various teaching styles.</i><br>
               </p>
               <!--<a href="#" class="button">Download resume as PDF format</a> <img src="http://placehold.it/150x134" class="signature" alt="" />-->
             </div>
@@ -571,7 +571,9 @@
                       <input name="name" type="text" id="name" placeholder="Your Name..." />
                       <input name="email" type="text" id="email" placeholder="Your Email..." />
                       <textarea name="message" id="message" cols="45" rows="5" placeholder="Your Message..." ></textarea>
-                      <div class="g-recaptcha" data-sitekey="6LeSU_QcAAAAAH3SFnL3OC51HyfE4BDQWgwx4_Hn"></div>
+                      <br/>
+                      <br/>
+                      <div class="g-recaptcha" data-sitekey="6LeSU_QcAAAAAH3SFnL3OC51HyfE4BDQWgwx4_Hn" data-theme="light" ></div>
                       <input type="submit" name="button" id="button" value="say hello!">
                       <div id="successmsg"></div>
                     </form>
