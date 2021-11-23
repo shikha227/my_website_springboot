@@ -63,6 +63,20 @@
             </div>
             <div class="row" >
 
+                <div class="blog-list filter jenkins">
+                    <div class="blog-img"><a
+                            href="https://www.linkedin.com/pulse/steps-install-jenkins-aws-ec2-linux-instance-dr-parth-shah/"><img
+                            src="https://i.ytimg.com/vi/jmm8DsosBqw/maxresdefault.jpg" alt=""></a></div>
+                    <div class="blog-list-details"><span class="date">Tuesday &nbsp;/&nbsp; Nov 23, 2021</span>
+                        <h3><a
+                                href="https://www.linkedin.com/pulse/steps-install-jenkins-aws-ec2-linux-instance-dr-parth-shah/">Steps to install Jenkins on AWS EC2 Linux instance</a></h3>
+
+                        <div class="title-divider"></div>
+                        <p> Learn to install java, install jenkins and start jenkins on AWS EC2 instance.</p>
+
+                    </div>
+                </div>
+
                 <div class="blog-list filter java">
                     <div class="blog-img"><a
                             href="https://www.udemy.com/course/developing-and-hosting-a-short-lived-website-for-a-free"><img
@@ -181,9 +195,10 @@
                 <div id="myBtnContainer">
                 <ul>
                     <li><button class="button active" data-filter="all"> Show all</button></li>
+                    <li><button class="button" data-filter="aws"> AWS</button></li>
                     <li><button class="button" data-filter="cryptocurrency"> Cryptocurrency</button></li>
                     <li><button class="button" data-filter="java"> Java Programming</button></li>
-                    <li><button class="button" data-filter="aws"> AWS</button></li>
+                    <li><button class="button" data-filter="jenkins"> Jenkins</button></li>
                     <li><button class="button" data-filter="spring"> Spring Boot</button></li>
                 </ul>
             </div>

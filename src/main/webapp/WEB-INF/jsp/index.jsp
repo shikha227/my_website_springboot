@@ -376,7 +376,7 @@
             <p>
               <a href="https://orcid.org/my-orcid?orcid=0000-0003-4641-7787"><img src="images/ORCiD.jpg"
                   style=" border-radius:50%;height:10%;width:10%" /></a>
-              <a href="https://publons.com/researcher/1955888/parth-d-shah/"><img src="images/wos.png"
+              <a href="https://publons.com/researcher/1955888/parth-shah/"><img src="images/wos.png"
                 style=" border-radius:10%;height:10%;width:10%;margin-left:20px;" /></a>
               <a href="https://www.scopus.com/authid/detail.uri?authorId=57190799699"><img src="images/scopus.png"
                 style=" border-radius:50%;height:10%;width:10%;margin-left:20px;" /></a>
