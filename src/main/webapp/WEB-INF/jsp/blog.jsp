@@ -69,7 +69,9 @@
                             src="https://i.ytimg.com/vi/jmm8DsosBqw/maxresdefault.jpg" alt=""></a></div>
                     <div class="blog-list-details"><span class="date">Tuesday &nbsp;/&nbsp; Nov 23, 2021</span>
                         <h3><a
-                                href="https://www.linkedin.com/pulse/steps-install-jenkins-aws-ec2-linux-instance-dr-parth-shah/">Steps to install Jenkins on AWS EC2 Linux instance</a></h3>
+                                href="https://www.linkedin.com/pulse/steps-install-jenkins-aws-ec2-linux-instance-dr-parth-shah/">1. Steps to install Jenkins on AWS EC2 Linux instance</a> </h3><br><h3>
+                            <a href="https://www.linkedin.com/pulse/using-user-data-script-jenkins-installation-aws-ec2-linux-shah"> 2. Using User Data Script for Jenkins installation on AWS EC2 Linux Instance</a>
+                        </h3>
 
                         <div class="title-divider"></div>
                         <p> Learn to install java, install jenkins and start jenkins on AWS EC2 instance.</p>
