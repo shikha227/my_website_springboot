@@ -65,7 +65,7 @@
       <div class="social">
 
         <a href="https://github.com/codersage-in" target="_blank" class="facebook"><i class="fa fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/parth788/" target="_blank" class="twitter"><i
+        <a href="https://www.linkedin.com/in/shah-parth-d" target="_blank" class="twitter"><i
             class="fa fa-linkedin"></i></a>
       </div>
       <!-- <div class="copyright"> © Parth Shah.<br>

@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
-
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 import java.io.UnsupportedEncodingException;
@@ -16,16 +15,15 @@ public class MailServiceImpl implements MailService{
     JavaMailSender mailSender;
 
     @Override
-    public boolean sendMail(String name, String email, String messageFromUser) {
+    public boolean sendMail(Mail mail) {
         MimeMessage message = mailSender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(message);
-        String userMessage = "Dear CodersAge, Mr./Ms " + name + " is trying to connect. Following is the message from him/her:  " + messageFromUser;
-
+        //String userMessage = "Dear CodersAge, Mr./Ms " + name + " is trying to connect. Following is the message from him/her:  " + messageFromUser;
         try {
-            helper.setFrom(email, name);
-            helper.setTo("codersage.in@gmail.com");
-            helper.setSubject("[URGENT] --> " + name + " is trying to contact you through your website");
-            helper.setText(userMessage, true);
+            helper.setFrom(mail.getFrom(), "self");
+            helper.setTo(mail.getTo());
+            helper.setSubject(mail.getSubject());
+            helper.setText(mail.getContent(), true);
         } catch (MessagingException e) {
             e.printStackTrace();
         } catch (UnsupportedEncodingException e) {
@@ -34,5 +32,5 @@ public class MailServiceImpl implements MailService{
         mailSender.send(message);
         return false;
     }
-    }
+}
 

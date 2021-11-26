@@ -93,6 +93,26 @@
 			<artifactId>spring-boot-starter-mail</artifactId>
 		</dependency>
 
+<!--		<dependency>-->
+<!--			<groupId>com.icegreen</groupId>-->
+<!--			<artifactId>greenmail</artifactId>-->
+<!--			<version>1.5.5</version>-->
+<!--			<scope>test</scope>-->
+<!--		</dependency>-->
+		<!-- https://mvnrepository.com/artifact/com.icegreen/greenmail-junit5 -->
+		<dependency>
+			<groupId>com.icegreen</groupId>
+			<artifactId>greenmail-junit5</artifactId>
+			<version>1.6.5</version>
+			<scope>test</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.awaitility</groupId>
+			<artifactId>awaitility</artifactId>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>

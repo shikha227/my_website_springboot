@@ -1,31 +1,60 @@
 package in.codersage.securitydemo.model;
 
 public class Mail {
-    private String name;
-    private String email;
-    private String message;
+    private String from;
+    private String to;
+    private String subject;
+    private String content;
 
-    public String getName() {
-        return name;
+    public Mail() {
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public Mail(String from, String to, String subject, String content) {
+        this.from = from;
+        this.to = to;
+        this.subject = subject;
+        this.content = content;
     }
 
-    public String getEmail() {
-        return email;
+    public String getFrom() {
+        return from;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setFrom(String from) {
+        this.from = from;
     }
 
-    public String getMessage() {
-        return message;
+    public String getTo() {
+        return to;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setTo(String to) {
+        this.to = to;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    @Override
+    public String toString() {
+        return "Mail{" +
+                "from='" + from + '\'' +
+                ", to='" + to + '\'' +
+                ", subject='" + subject + '\'' +
+                ", content='" + content + '\'' +
+                '}';
     }
 }
