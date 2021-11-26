@@ -73,6 +73,11 @@
                         <br><h3>
                             <a href="https://www.linkedin.com/pulse/using-user-data-script-jenkins-installation-aws-ec2-linux-shah"> 2. Using User Data Script for Jenkins installation on AWS EC2 Linux Instance</a>
                         </h3>
+                        <br><h3>
+                            <a href="https://www.linkedin.com/pulse/deploying-spring-boot-application-aws-ec2-instance-using-shah"> 3. Use Jenkins pipeline to deploy Spring Application on EC2 Instance</a>
+                        </h3>
+
+
 
                         <div class="title-divider"></div>
                         <p> Learn to install java, install jenkins and start jenkins on AWS EC2 instance.</p>
