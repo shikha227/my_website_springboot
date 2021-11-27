@@ -48,7 +48,7 @@
     <aside class="menu" id="menu">
       <div class="logo">
         <!-- Logo image-->
-        <img src="images/logo.png" width="140" height="140" alt=""/>
+        <img src="images/logo.png" width="140" height="140" alt="Parth"/>
         <!-- Logo name-->
         <span>Parth Shah</span>
       </div>

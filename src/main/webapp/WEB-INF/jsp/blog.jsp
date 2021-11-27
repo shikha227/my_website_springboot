@@ -29,7 +29,7 @@
     <aside class="menu" id="menu">
         <div class="logo">
             <!-- Logo image-->
-            <img src="images/logo.png" width="140" height="140" alt=""/>
+            <img src="images/logo1.png" width="140" height="140" alt=""/>
             <!-- Logo name-->
             <span>Andrew Smith</span>
         </div>
