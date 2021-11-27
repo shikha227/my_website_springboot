@@ -37,7 +37,7 @@
         <a href="#menu1" class="menu-link"></a>
         <!-- Left Navigation-->
         <nav id="menu1" role="navigation"><a href="/home"><span id="link_introduction"
-                                                                class="active"><centre>Home</centre></span></a> <a
+                                                                class="active">Home</span></a> <a
                 href="/home#chapterabout"><span id="link_about">About</span></a> <a
                 href="/home#chapterskills"><span id="link_skills">Skills</span></a> <a
                 href="/home#chapterexperience"><span
