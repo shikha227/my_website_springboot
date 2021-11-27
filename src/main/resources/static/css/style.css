@@ -397,7 +397,7 @@ h5 {
 .menu nav a {
     display: block;
     padding: 13px 0;
-    text-align: left;
+    text-align: center;
     outline: none;
     margin: 0 30px;
     border-bottom: 1px solid rgba(235,235,235,0.1);
@@ -410,6 +410,7 @@ h5 {
     -moz-transition-duration: .2s;
     -webkit-transition-duration: .2s;
     -o-transition-duration: .2s;
+
 }
 .menu nav a span.active {
     color: #ee6817;
