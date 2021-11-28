@@ -444,14 +444,11 @@
                     <section class="grid-wrap">
                       <ul class="grid">
                         <li>
+                          <figure> <img src="images/certificate-of-completion-for-getting-started-with-spring-boot Nov 2021.webp" alt="" />
+                          </figure>
+                        </li>
+                        <li>
                           <figure> <img src="images/Hackerank Java Basic Oct 2021.png" alt="" />
-                            <!-- <figcaption>
-                              <div class="figcaption-details"> <img src="images/icon-plus.png" height="82" width="82"
-                                  alt="" />
-                                <h3>Herbal Beauty Salon</h3>
-                                <span>Photography</span>
-                              </div>
-                            </figcaption> -->
                           </figure>
                         </li>
                         <li>
