@@ -213,15 +213,15 @@
             </div>
         </div>
     </div>
-    <div class="pagination">
-        <ul class="pagerblock">
-            <li><a href="javascript:void(0)"><i class="fa fa-angle-left"></i></a></li>
-            <li><a href="javascript:void(0)" class="current">1</a></li>
-            <li><a href="javascript:void(0)">2</a></li>
-            <li><a href="javascript:void(0)">3</a></li>
-            <li><a href="javascript:void(0)"><i class="fa fa-angle-right"></i></a></li>
-        </ul>
-    </div>
+<%--    <div class="pagination">--%>
+<%--        <ul class="pagerblock">--%>
+<%--            <li><a href="javascript:void(0)"><i class="fa fa-angle-left"></i></a></li>--%>
+<%--            <li><a href="javascript:void(0)" class="current">1</a></li>--%>
+<%--            <li><a href="javascript:void(0)">2</a></li>--%>
+<%--            <li><a href="javascript:void(0)">3</a></li>--%>
+<%--            <li><a href="javascript:void(0)"><i class="fa fa-angle-right"></i></a></li>--%>
+<%--        </ul>--%>
+<%--    </div>--%>
 </div>
 <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 <!-- Portfolio Slider-->
