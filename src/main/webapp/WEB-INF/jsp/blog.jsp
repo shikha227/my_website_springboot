@@ -8,7 +8,6 @@
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
     <title>Learn Computing...</title>
     <link rel="shortcut icon" href="images/favicon.ico">
-
     <!-- Google Font-->
     <link
             href='http://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700,900,900italic,700italic%7COswald:400,300,700'
@@ -20,7 +19,6 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
     <!-- Responsive -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
-
 </head>
 
 <body class="blog">
