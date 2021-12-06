@@ -1,3 +1,6 @@
+<%@ page import="java.util.Date" %>
+<%@ page import="java.util.Calendar" %>
+<%@ page import="java.time.LocalDate" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 
@@ -63,10 +66,12 @@
             id="link_portfolio">Certificates</span></a><a href="#chaptercontact"><span
             id="link_contact">Contact</span></a><a href="blog"><span id="link_blog">Blog</span></a></nav>
       <div class="social">
-
-        <a href="https://github.com/codersage-in" target="_blank" class="facebook"><i class="fa fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/shah-parth-d" target="_blank" class="twitter"><i
+        <a href="https://github.com/codersage-in" target="_blank" class="github"><i class="fa fa-github"></i></a>
+          <a href="https://twitter.com/CodersageIn" target="_blank" class="twitter"><i
+                  class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/shah-parth-d" target="_blank" class="linkedin"><i
             class="fa fa-linkedin"></i></a>
+
       </div>
       <!-- <div class="copyright"> © Parth Shah.<br>
       All Rights Reserved. </div> -->
@@ -117,13 +122,11 @@
                 <li>Nationality: Indian</li>
               </ul>
               <h3>Professional Profile</h3>
-              <p align="justify"> <i>Hello, I&lsquo;m Parth Shah, A dedicated teacher with a strong work ethic and a commitment to excellence in
-                teaching. I Skillfully manage academic responsibilities and promotes open classroom discussions. I am
-                Programming, Computer Architecture and Security Professor with over 16 years of research and teaching
-                experience. I thoroughly understands the learning process and works hard to adapt new methods and use
-                various teaching styles.</i><br>
+              <p align="justify"> <i>Hello, I&lsquo;m Parth Shah, A Full Stack Web Application Developer with a strong work ethic and a commitment to excellence in
+                teaching. I Skillfully manage software development and academic responsibilities. I am a Information and Network Security Professor with over <%= LocalDate.now().getYear() - 2004  %> years of research and teaching
+                experience. I thoroughly understands the learning process and works hard to adapt new methods and use various teaching styles.</i><br>
               </p>
-              <!--<a href="#" class="button">Download resume as PDF format</a> <img src="http://placehold.it/150x134" class="signature" alt="" />-->
+              <a href="https://drive.google.com/file/d/12C42-3FhISGk78eghpDFRPBOyZMKfn9-/view?usp=sharing" class="button">Download resume as PDF format</a> <img src="http://placehold.it/150x134" class="signature" alt="" />
             </div>
           </div>
         </article>
@@ -374,9 +377,9 @@
             <h3>Just My Research</h3>
             </br>
             <p>
-              <a href="https://orcid.org/my-orcid?orcid=0000-0003-4641-7787"><img src="images/ORCiD.jpg"
+              <a href="https://orcid.org/0000-0003-4641-7787"><img src="images/ORCiD.jpg"
                   style=" border-radius:50%;height:10%;width:10%" /></a>
-              <a href="https://publons.com/researcher/1955888/parth-shah/"><img src="images/wos.png"
+              <a href="https://publons.com/researcher/4325047/parth-shah/"><img src="images/wos.png"
                 style=" border-radius:10%;height:10%;width:10%;margin-left:20px;" /></a>
               <a href="https://www.scopus.com/authid/detail.uri?authorId=57190799699"><img src="images/scopus.png"
                 style=" border-radius:50%;height:10%;width:10%;margin-left:20px;" /></a>
@@ -634,9 +637,11 @@
                     <div class="col-6 m-margin-top30">
                       <h3>I'm also on Professional Networks</h3>
                       <div class="contact-social margin-top30">
-                        <a href="https://github.com/codersage-in" target="_blank" class="facebook"><i
+                        <a href="https://github.com/codersage-in" target="_blank" class="github"><i
                             class="fa fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/parth788/" target="_blank" class="facebook"><i
+                        <a href="https://twitter.com/CodersageIn" target="_blank" class="twitter"><i
+                                class="fa fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/parth788/" target="_blank" class="linkedin"><i
                             class="fa fa-linkedin"></i></a>
                       </div>
                     </div>

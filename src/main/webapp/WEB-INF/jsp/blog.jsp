@@ -46,10 +46,13 @@
                 id="link_portfolio">Certificates</span></a><a
                 href="/home#chaptercontact"><span id="link_contact">Contact</span></a><a href="/blog"><span
                 id="link_blog">Blog</span></a></nav>
-        <div class="social"><a href="https://github.com/codersage-in" target="_blank"><i class="fa fa-github"></i></a>
-            <a
-                    href="https://www.linkedin.com/in/parth788/" target="_blank" class="twitter"><i
+        <div class="social"><a href="https://github.com/codersage-in" target="_blank" class="github"><i class="fa fa-github"></i></a>
+            <a href="https://twitter.com/CodersageIn" target="_blank" class="twitter"><i
+                    class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/shah-parth-d" target="_blank" class="linkedin"><i
                     class="fa fa-linkedin"></i></a></div>
+
+
         <!-- <div class="copyright"> © Parth Shah.<br>
         All Rights Reserved. </div> -->
     </aside>
@@ -213,15 +216,15 @@
             </div>
         </div>
     </div>
-    <div class="pagination">
-        <ul class="pagerblock">
-            <li><a href="javascript:void(0)"><i class="fa fa-angle-left"></i></a></li>
-            <li><a href="javascript:void(0)" class="current">1</a></li>
-            <li><a href="javascript:void(0)">2</a></li>
-            <li><a href="javascript:void(0)">3</a></li>
-            <li><a href="javascript:void(0)"><i class="fa fa-angle-right"></i></a></li>
-        </ul>
-    </div>
+<%--    <div class="pagination">--%>
+<%--        <ul class="pagerblock">--%>
+<%--            <li><a href="javascript:void(0)"><i class="fa fa-angle-left"></i></a></li>--%>
+<%--            <li><a href="javascript:void(0)" class="current">1</a></li>--%>
+<%--            <li><a href="javascript:void(0)">2</a></li>--%>
+<%--            <li><a href="javascript:void(0)">3</a></li>--%>
+<%--            <li><a href="javascript:void(0)"><i class="fa fa-angle-right"></i></a></li>--%>
+<%--        </ul>--%>
+<%--    </div>--%>
 </div>
 <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 <!-- Portfolio Slider-->
