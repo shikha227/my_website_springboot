@@ -93,11 +93,11 @@
                   <span class="title">Full Stack Application Developer</span> <br />
                 </div>
                 <div class="col-6 margin-bottom50">
-                  <span><img src="images/AWS-SolArchitect-Associate-2020.png"  style="max-width: 40%;height: auto;">
+                  <span><img src="images/AWS-SolArchitect-Associate-2020.png"  style="max-width: 30%;height: auto;">
                     <img src="images/AWS-Academy-Accredited-Educator-Badge.png"
-                      style="max-width: 40%;height: auto;">
+                      style="max-width: 30%;height: auto;">
                     <img src="images/AWS-Academy-Graduate-Badge-Foundational.png"
-                      style="max-width: 40%;height: auto;">
+                      style="max-width: 30%;height: auto;">
                   </span>
                 </div>
               </div>
