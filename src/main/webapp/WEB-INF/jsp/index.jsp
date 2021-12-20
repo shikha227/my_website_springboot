@@ -41,7 +41,15 @@
   <!-- Portfolio-->
   <script src="js/modernizr.custom.js"></script>
   <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GHGTEPJJLQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'G-GHGTEPJJLQ');
+    </script>
 
 </head>
 
